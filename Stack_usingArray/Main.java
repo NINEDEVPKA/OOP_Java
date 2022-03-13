@@ -6,7 +6,6 @@ class Stack
     private int top;
     private int capacity;
 
-    // Constructor to initialize the stack
     Stack(int size)
     {
         Arr = new int[size];
@@ -41,7 +40,7 @@ class Stack
         return Arr[top--];
     }
 
-    // Utility function to return the top element of the stack
+ 
     public int peek()
     {
         if (!isEmpty()) {
@@ -54,17 +53,15 @@ class Stack
         return -1;
     }
 
-    // Utility function to return the size of the stack
+
     public int size() {
         return top + 1;
     }
-
-    // Utility function to check if the stack is empty or not
+    
     public boolean isEmpty() {
         return top == -1;               // or return size() == 0;
     }
 
-    // Utility function to check if the stack is full or not
     public boolean isFull() {
         return top == capacity - 1;     // or return size() == capacity;
     }
